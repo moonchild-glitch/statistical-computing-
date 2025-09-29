@@ -14,7 +14,7 @@
 #2. Relational (Comparison) Operators
 # ==  equal to
 # !=  not equal to
-# >   greater than
+# >   greater than 
 # <   less than
 # >=  greater than or equal to
 # <=  less than or equal to
