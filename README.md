@@ -5,7 +5,7 @@
 - Kevin Machogu — BSCCS/2023/66850
 - Sharlen Kinyua — BSCCS/2023/59148
 
-This repo contains small examples in Julia, Python, and R under `BasicsOfData/`.
+This repo contains small examples in Julia, Python, and R under `BasicsOfData/`, and an R lesson on arrays and data frames in `Arrays and DataFrames/` that explains arrays, matrices, lists, and data frames with simple modeling and plots.
 
 ## Prerequisites
 
@@ -57,6 +57,37 @@ Run the R example (if you have R installed):
 ```bash
 Rscript BasicsOfData/math_operations.R
 ```
+
+### Arrays and Data Frames (R lesson)
+
+This R script demonstrates core R data structures and simple modeling/plotting:
+
+- Arrays and matrices: creation, indexing, row/column operations
+- Matrix algebra: transpose, determinant, diagonal, inverse, solving linear systems
+- Lists: heterogeneous containers, naming elements, accessing with `$`/`[[`]
+- Data frames: creation, access by rows/columns, `with()`, summary statistics
+- Modeling: simple linear regression on a housing dataset (Pennsylvania tracts)
+- Eigen decomposition: extracting eigenvalues/vectors
+- Plots: saves two PNGs to a `plots/` folder
+
+Run the lesson script:
+
+```bash
+# from repo root; quotes handle spaces in path
+Rscript "Arrays and DataFrames/Arrays and Data Frames.r"
+```
+
+Outputs:
+
+- PNG files are saved to the `plots/` directory at the repo root:
+  - `plots/allegheny_actual_vs_predicted.png`
+  - `plots/illiteracy_vs_frost.png`
+
+Notes:
+
+- The Allegheny scatter plot requires downloading a CSV from CMU; if the network is unavailable, that plot will be skipped and the rest of the script still runs.
+- The script is non-interactive: plots are written to files so it works in batch environments.
+- The path contains spaces, so keep the quotes around the script path.
 
 ## Troubleshooting
 
