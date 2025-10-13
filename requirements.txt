@@ -1,0 +1,2 @@
+# Python dependencies for this repo
+numpy==2.3.3

@@ -88,7 +88,7 @@ pi*10
 cos(pi)
 ## [1] -1
 
-Most variables are created with the assignment operator <-
+#Most variables are created with the assignment operator <-
 
 approx.pi <- 22/7
 approx.pi

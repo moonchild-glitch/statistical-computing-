@@ -6,7 +6,7 @@
 # 1. Arithmetic Operators
 println("Arithmetic Operators:")
 println(7 + 5)   # 12
-println(7 - 5)   # 2
+println(7 - 5)   # 
 println(7 * 5)   # 35
 println(7 ^ 5)   # 16807
 println()
@@ -115,7 +115,7 @@ println()
 
 # Other vector types
 nums = [3.5, 4.2, 9.1]                 # numeric
-names = ["Alice", "Bob", "Clifford"]   # character
+name_list = ["Alice", "Bob", "Clifford"]   # character (avoid conflict with Base.names)
 flags = [true, false, true]            # logical
 println()
 
@@ -129,8 +129,9 @@ println(x .- y)    # [14,16,20,90]
 println(x ./ y)    # [-1.0, -1.0, -1.0, -1.0]
 println()
 
-# Recycling example → Julia uses broadcasting
-println(x .+ [1,2])        # [8,10,11,47]
+# Broadcasting note: Julia does NOT auto-recycle shorter vectors like R.
+# To mimic recycling, make lengths match explicitly:
+println(x .+ [1,2,1,2])    # [8,10,11,47]
 println(x .^ [1,0,-1,0.5]) # [7.0, 1.0, 0.1, 6.7082...]
 println(2 .* x)            # [14,16,20,90]
 println()

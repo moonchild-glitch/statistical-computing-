@@ -119,8 +119,9 @@ print(x - y)   # [14 16 20 90]
 print(x / y)   # [-1. -1. -1. -1.]
 print()
 
-# Broadcasting (R recycling equivalent)
-print(x + np.array([1, 2]))  # [ 8 10 11 47]
+# Broadcasting note: NumPy does NOT auto-recycle shorter arrays like R.
+# To mimic recycling, ensure shapes are compatible (match lengths or reshape):
+print(x + np.array([1, 2, 1, 2]))  # [ 8 10 11 47]
 print(x ** np.array([1, 0, -1, 0.5]))  # [7. 1. 0.1 6.708]
 print()
 
