@@ -6,6 +6,7 @@
 - Sharlen Kinyua — BSCCS/2023/59148
 
 This repo contains small examples in Julia, Python, and R under `BasicsOfData/`, and an R lesson on arrays and data frames in `Arrays and DataFrames/` that explains arrays, matrices, lists, and data frames with simple modeling and plots.
+Additionally, a Python translation of the R lesson is provided to reproduce the same outputs.
 
 ## Prerequisites
 
@@ -36,6 +37,26 @@ Run the Python script:
 # or (after activating the venv)
 python BasicsOfData/math_operations.py
 ```
+
+### Python translation of "Arrays and Data Frames.r"
+
+A Python version of the R script exists at `Arrays and DataFrames/arrays_and_data_frames.py`. It mirrors the printed outputs and plots from the original R lesson.
+
+Run it with:
+
+```bash
+# using the workspace venv directly
+./.venv/bin/python "Arrays and DataFrames/arrays_and_data_frames.py"
+
+# or (after activating the venv)
+python "Arrays and DataFrames/arrays_and_data_frames.py"
+```
+
+Notes:
+- Plots are saved to the `plots/` directory:
+  - `plots/allegheny_actual_vs_predicted.png` (only if the dataset download succeeds)
+  - `plots/illiteracy_vs_frost.png`
+- If the CSV download fails, the Pennsylvania regression and Allegheny plot steps will be skipped; the rest still runs.
 
 ## Julia
 
