@@ -55,6 +55,7 @@ python "Arrays and DataFrames/arrays_and_data_frames.py"
 ```
 
 Notes:
+
 - Plots are saved to the `plots/` directory:
   - `plots/allegheny_actual_vs_predicted.png` (only if the dataset download succeeds)
   - `plots/illiteracy_vs_frost.png`
