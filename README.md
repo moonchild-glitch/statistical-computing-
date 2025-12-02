@@ -4,7 +4,7 @@
 
 - Kevin Machogu — BSCCS/2023/66850
 - Sharlen Kinyua — BSCCS/2023/59148
-- Sarah Githinji — BSCCS/2023/59148
+- Sarah Githinji — BSCCS/2023/68501
 - Edwin Meiteikini — BSCCS/2024/44160
 
 This repo contains small examples in Julia, Python, and R under `BasicsOfData/`, and an R lesson on arrays and data frames in `Arrays and DataFrames/` that explains arrays, matrices, lists, and data frames with simple modeling and plots.
